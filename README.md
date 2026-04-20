@@ -1,72 +1,58 @@
-# Zomato Data Analysis 📊🥤
-An Exploratory Data Analysis (EDA) project aimed at uncovering insights from Zomato’s restaurant data. This project analyzes restaurant performance, customer preferences, and market trends to help stakeholders make data-driven decisions.
+# Zomato Data Analysis & BI Dashboard 📊🥤
+
 
 ## 📌 Project Overview
-The food industry is highly competitive. This project dives into a comprehensive Zomato dataset to understand the factors that influence restaurant ratings, the impact of online delivery services, and the cost distribution across various locations.
-
-## 🚀 Key Features
-• Data Cleaning: Handling missing values, removing duplicates, and data type conversion.
-
-• Exploratory Data Analysis (EDA): Identifying patterns and correlations between variables.
-
-• Data Visualization: Using charts and graphs to represent:
-
-  → Top restaurant chains.
-
-  → Distribution of ratings.
-
-  → Online delivery vs. Dine-in preferences.
-
-  → Average cost for two across different cities/locations.
-
-• Insights: Actionable takeaways regarding what makes a restaurant successful on the platform.
+This project focuses on analyzing the restaurant landscape using a Zomato dataset. The objective was to transition from Exploratory Data Analysis (EDA) performed in Python to a Business Intelligence (BI) Dashboard in Power BI. The project identifies market trends, consumer preferences, and "Hidden Gems" restaurants that offer high quality at a budget-friendly price.
 
 ## 🛠️ Tech Stack
-Language: Python 3.x
+• Data Cleaning & Analysis: Python (Pandas, Matplotlib, Seaborn)
 
-Libraries:
+• Environment: Google Colab
 
- • Pandas (Data Manipulation)
+• Business Intelligence: Power BI (DAX, Power Query)
 
- • NumPy (Numerical Computations)
+• Data Source: Zomato Restaurant Dataset (CSV)
 
- • Matplotlib & Seaborn (Data Visualization)
+## 🚀 Phase 1: Python Data Analysis (Google Colab)
+The initial phase involved data extraction and cleaning using Python. 
+- **Data Cleaning:** Handled missing values, formatted currency strings into integers, and normalized ratings to a 5-point decimal scale.
+- **Library Stack:** `Pandas`, `Matplotlib`, `Seaborn`.
+- **Key Findings:** Identified a correlation between "Book Table" facilities and higher average user ratings.
 
-Tool: Jupyter Notebook
+## 📊 Phase 2: Power BI Dashboard
+I transformed the cleaned dataset into an interactive dashboard to enable stakeholders to filter and explore data intuitively.
 
-
-## 📊 Sample Insights (Examples)
-• Online Orders: Restaurants that offer online ordering typically receive higher ratings compared to those that do not.
-
-• Cost vs Rating: Higher-priced restaurants don't always guarantee higher customer satisfaction.
-
-• Location Trends: Specific localities have a higher density of specific cuisines (e.g., North Indian vs. Cafe culture).
-
-## 💻 Installation & Usage
-Clone the repository:
-
-
-    git clone https://github.com/mitalikhot/Zomato-Data-Analysis.git
+### Key Features:
+* **Executive Metrics:** Real-time tracking of Total Restaurants, Average Ratings (3.63), and Average Cost for Two (₹418).
+* **Market Segmentation:** Analyzed restaurant distribution across categories like **Buffet, Cafes, and Dining**.
+* **Value for Money Analysis:** A scatter plot identifying "Hidden Gems"—restaurants with high ratings (>4.0) but low average costs.
+* **Service Impact:** Dynamic slicers to compare the performance of restaurants offering Online Orders vs. those that do not.
 
 
-Navigate to the project folder:
+## 🛠️ Technical Workflow
+1.  **ETL (Extract, Transform, Load):** Cleaned data in Python and performed further transformations in **Power Query** (including conditional columns for Price Ranges).
+2.  **Data Modeling:** Established relationships and created custom **DAX Measures** for weighted ratings and popularity indices.
+3.  **Visualization:** Built an insight-driven layout following UI/UX best practices for data storytelling.
 
+## 📈 Insights Captured
+* **High-End vs. Budget:** Only a small percentage of restaurants fall into the "Luxury" category, yet they account for a significant portion of user engagement (votes).
+* **Dining Trends:** Cafes tend to have higher average ratings compared to standard Dining outlets in the sampled dataset.
+* **Delivery Power:** Restaurants offering **Online Orders** see a higher volume of user reviews and votes on average.
 
-    cd Zomato-Data-Analysis
+## 📁 Repository Structure
+* `Zomato_Data_Analysis.ipynb`: Original Google Colab notebook for EDA.
+* `cleaned_data.csv`: The processed dataset used for the dashboard.
+* `Zomato_Data_Analysis.pbix`: Power BI source file.
+* `Dashboard_Preview.png`: Screenshot of the final interactive report.
 
-Install dependencies:
-
-    pip install -r requirements.txt
-
-Run the analysis:
-
-Open Zomato_Analysis.ipynb in Jupyter Notebook or VS Code to view the step-by-step analysis.
+## How to Use
+1. Clone the repository.
+2. Open the `.ipynb` file to view the data processing logic.
+3. Open the `.pbix` file in Power BI Desktop to interact with the dashboard.
 
 ## 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvement, please fork the repo and create a pull request.
 
-## 📜 License
-Distributed under the MIT License. See LICENSE for more information.
 
 ### Author: Mitali Khot
 
