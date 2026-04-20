@@ -25,7 +25,7 @@ I transformed the cleaned dataset into an interactive dashboard to enable stakeh
 ### Key Features:
 * **Executive Metrics:** Real-time tracking of Total Restaurants, Average Ratings (3.63), and Average Cost for Two (₹418).
 * **Market Segmentation:** Analyzed restaurant distribution across categories like **Buffet, Cafes, and Dining**.
-* **Value for Money Analysis:** A scatter plot identifying "Hidden Gems"—restaurants with high ratings (>4.0) but low average costs.
+* **Value for Money Analysis:** A scatter plot identifying "Hidden Gems" restaurants with high ratings (>4.0) but low average costs.
 * **Service Impact:** Dynamic slicers to compare the performance of restaurants offering Online Orders vs. those that do not.
 
 
@@ -50,8 +50,6 @@ I transformed the cleaned dataset into an interactive dashboard to enable stakeh
 2. Open the `.ipynb` file to view the data processing logic.
 3. Open the `.pbix` file in Power BI Desktop to interact with the dashboard.
 
-## 🤝 Contributing
-Contributions are welcome! If you have suggestions for improvement, please fork the repo and create a pull request.
 
 
 ### Author: Mitali Khot
